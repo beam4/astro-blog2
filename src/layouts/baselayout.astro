@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
----
+---	
 
 <html lang="en">
 	<head>
@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
   <body>
 		<Header />
 		<main>
-		<slot /> It's OK2.	
+		<slot />	
 		</main>
 	</body>
 </html>
