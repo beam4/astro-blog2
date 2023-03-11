@@ -2,4 +2,4 @@
 layout: '../layouts/baselayout.astro'
 title: 'My Markdown page'
 ---
-That is OK.
+That is OK2.
