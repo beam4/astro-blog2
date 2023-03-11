@@ -5,16 +5,18 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
 ---	
+	
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
-
+<html>
+  <head>
+    <!-- Add other Head elements here, like styles and meta tags. -->
+    <title>{frontmatter.title}</title>
+  </head>
   <body>
-		<Header />
-		<main>
-		<slot />	
-		</main>
-	</body>
-</html>
+    <Header />	  
+    <!-- Add other UI components here, like common headers and footers. -->
+    <!-- 2. Rendered HTML will be passed into the default slot. -->
+    <slot />
+  </body>
+</html>	
+	
