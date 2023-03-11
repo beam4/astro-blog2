@@ -6,7 +6,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 const { frontmatter } = Astro.props;
 ---
 
-
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
@@ -15,7 +14,7 @@ const { frontmatter } = Astro.props;
   <body>
 		<Header />
 		<main>
-      <slot /> It's OK2.
+		<slot /> It's OK2.	
 		</main>
 	</body>
 </html>
